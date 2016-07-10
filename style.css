@@ -1,0 +1,56 @@
+* {
+  background-color: #F5F3EE;
+}
+
+body {
+  font-family: 'David Libre', serif;
+  color: #4A96AD;
+}
+
+.left {
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+
+.left h1 {
+  /*font-family: 'Shadows Into Light', cursive;*/
+  font-family: 'Nothing You Could Do', cursive;
+  /*font-family: 'Over the Rainbow', cursive;*/
+  /*font-family: 'Dawning of a New Day', cursive;*/
+  /*font-family: 'Waiting for the Sunrise', cursive;*/
+  font-size: 75px;
+  color: #7D1935;
+  margin-bottom: 0px;
+}
+
+.right {
+  width: 50%;
+  float: right;
+  text-align: center;
+  padding-top: 150px;
+}
+
+/*Buttons*/
+
+.button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  font-family: 'David Libre', serif;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-size: 20px;
+  color: #4A96AD;
+}
+
+a {
+  padding-right: 20px;
+}
+
+img {
+  height: 330px;
+  width: 400px;
+  border-radius: 100%;
+}
