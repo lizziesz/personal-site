@@ -54,3 +54,16 @@ img {
   width: 400px;
   border-radius: 100%;
 }
+
+.portfolio h3, .experience h3 {
+  color: #7D1935;
+}
+
+.portfolio a {
+  text-decoration: none;
+  color: #7D1935;
+}
+
+.portfolio a:hover {
+  color: #4A96AD;
+}

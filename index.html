@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="personalApp">
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Lizzie Szoke</title>
 </head>
-<body>
+<body ng-controller="MyController">
   <div class="left">
     <h1>Lizzie Szoke</h1>
     <img ng-src="my_image.jpg" alt="Picture of Lizzie">
@@ -22,11 +22,46 @@
     <a href="https://github.com/lizziesz"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
   </div>
   <div class="right">
-    <button class="button"><h3><i class="fa fa-plus" aria-hidden="true"></i> Portfolio</h3></button>
+    <button class="button" ng-click="view.portfolio = !view.portfolio"><h3><i class="fa fa-paint-brush" aria-hidden="true"></i> Portfolio</h3></button>
     <br>
-    <button class="button"><h3><i class="fa fa-plus" aria-hidden="true"></i> Experience</h3></button>
+    <div class="portfolio" ng-show="view.portfolio">
+      <p>Source code for all these projects and more class assignments can be found on my GitHub page.</p>
+      <h3>Galvanize Q1 Project: <a href="http://cooks-and-cookies.s3-website-us-west-2.amazonaws.com/">Cooks & Cookies</a></h3>
+      <p>Cooks & Cookies is a website that allows the user to search through exclusively dessert recipes and save favorite results. Technologies used include: HTML, CSS, Bootstrap, jQuery, Yummly API, Local Storage, and hosting through AWS.</p>
+      <h3>Galvanize Q2 Project: <a href="https://findingfido.herokuapp.com/">Finding Fido</a></h3>
+      <p>Finding Fido is a website that allows users to post pets that they have either lost or found, in the hopes of reuniting lost pets with their owners. Technologies used includes: Node, Express, CSS, Sass, SQL, Knex, jQuery, JavaScript, and hosting through Heroku.</p>
+      <h3>Angular Unit Project: <a href="http://reddit-clone.s3-website-us-west-2.amazonaws.com/">Reddit Clone</a></h3>
+      <p>Reddit Clone was a fun class assignment to mimic Reddit using AngularJS.</p>
+    </div>
+    <button class="button" ng-click="view.experience = !view.experience"><h3><i class="fa fa-briefcase" aria-hidden="true"></i> Experience</h3></button>
     <br>
-    <button class="button"><h3><i class="fa fa-plus" aria-hidden="true"></i> Education</h3></button>
+    <div class="experience" ng-show="view.experience">
+      <h3>Full Stack Student at Galvanize, Inc.</h3>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> April 2016-Present</h4>
+      <p>Galvanize is an intensive six-month coding bootcamp. As a student, I am responsible for keeping up to date with lectures and assignments. There are multiple assignments at any given time. Each quarter culminates in a final project. Topics learned include HTML, CSS, JavaScript, jQuery, Node, Express, and Angular.</p>
+      <h3>Conflicts Analyst Assistant at Hogan Lovells</h3>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> October 2014-March 2016</h4>
+      <p>Assist in the identification of potential conflicts of interest through corporate and conflicts database research of client and matter information provided by requesting attorney.</p>
+      <h3>Gymnastics Coach at North Boulder Recreation Center</h3>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> June 2012-October 2014</h4>
+      <p>Coached competitive gymnastics and non-competitive beginning-intermediate gymnastics for kids ages 3-12. Responsible for creating lesson plans catered to varying skill levels.</p>
+      <h3>Editorial Intern at University Press of Colorado</h3>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> Januray 2014-May 2014</h4>
+      <p>Helps the editor and director with writing catalog copy, prepares and transmits final manuscript to production, helps with basic clerical duties</p>
+      <h3>Editorial Intern at SKI Magazine and Skiing Magazine</h3>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> June 2013-August 2013</h4>
+      <p>Wrote and researched articles for online and print publication. Responsible for editing and fact-checking articles written by other interns.</p>
+      <h3>Marketing Intern at Snackle Mouth</h3>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> June 2012-August 2012</h4>
+      <p>Frequently used Microsoft Excel to organize data about Snackle Mouth's sales. Made phone calls to potential and existing buyers.</p>
+      <h3>Communications Assistant Work Study at Semester at Sea/Institute for Shipboard Education</h3>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> January 2012-May 2012</h4>
+      <p>Wrote press releases to announce the MV Explorer's arrival in various countries. Updated Semester at Sea's Facebook and Twitter accounts. Collected photographs for Semester at Sea's blog.</p>
+      <h3>Associate Editor at Youth Intermedia</h3>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> February 2008-December 2011</h4>
+      <p>Responsible for managing, sorting and editing a large number of submissions for KidzEra Magazine. Wrote press releases and other miscellaneous tasks when needed.</p>
+    </div>
+    <button class="button"><h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h3></button>
     <br>
     <button class="button"><h3><i class="fa fa-plus" aria-hidden="true"></i> Extra</h3></button>
   </div>
@@ -34,5 +69,6 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
