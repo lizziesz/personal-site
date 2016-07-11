@@ -2,6 +2,8 @@
 <html lang="en" ng-app="personalApp">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" , initial-scale="1">
+  <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
@@ -9,6 +11,7 @@
   <link href='https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
   <title>Lizzie Szoke</title>
 </head>
@@ -16,13 +19,14 @@
   <div class="left">
     <h1>Lizzie Szoke</h1>
     <img ng-src="my_image.jpg" alt="Picture of Lizzie">
-    <h3>Full Stack Web Developer</h3>
-    <a href="https://www.linkedin.com/in/lizzie-szoke-71481534"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-    </a>
-    <a href="https://github.com/lizziesz"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+    <h2>Full Stack Web Developer</h2>
+    <a href="https://www.linkedin.com/in/lizzie-szoke-71481534"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+    <a href="https://github.com/lizziesz"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/lizzie_szoke"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+    <h3><br><i class="fa fa-phone" aria-hidden="true"></i> Contact: <a href="mailto:szoke.elizabeth@gmail.com" class="email">Email Me!</a></h3>
   </div>
   <div class="right">
-    <button class="button" ng-click="view.portfolio = !view.portfolio"><h3><i class="fa fa-paint-brush" aria-hidden="true"></i> Portfolio</h3></button>
+    <button class="button" id="portfolioButton" ng-click="view.portfolio = !view.portfolio"><h1><i class="fa fa-paint-brush" aria-hidden="true"></i> Portfolio</h1></button>
     <br>
     <div class="portfolio" ng-show="view.portfolio">
       <p>Source code for all these projects and more class assignments can be found on my GitHub page.</p>
@@ -33,7 +37,7 @@
       <h3>Angular Unit Project: <a href="http://reddit-clone.s3-website-us-west-2.amazonaws.com/">Reddit Clone</a></h3>
       <p>Reddit Clone was a fun class assignment to mimic Reddit using AngularJS.</p>
     </div>
-    <button class="button" ng-click="view.experience = !view.experience"><h3><i class="fa fa-briefcase" aria-hidden="true"></i> Experience</h3></button>
+    <button class="button" id="experienceButton" ng-click="view.experience = !view.experience"><h1><i class="fa fa-briefcase" aria-hidden="true"></i> Experience</h1></button>
     <br>
     <div class="experience" ng-show="view.experience">
       <h3>Full Stack Student at Galvanize, Inc.</h3>
@@ -61,9 +65,62 @@
       <h4><i class="fa fa-calendar" aria-hidden="true"></i> February 2008-December 2011</h4>
       <p>Responsible for managing, sorting and editing a large number of submissions for KidzEra Magazine. Wrote press releases and other miscellaneous tasks when needed.</p>
     </div>
-    <button class="button"><h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h3></button>
+    <button class="button" id="educationButton" ng-click="view.education = !view.education"><h1><i class="fa fa-university" aria-hidden="true"></i> Education</h1></button>
     <br>
-    <button class="button"><h3><i class="fa fa-plus" aria-hidden="true"></i> Extra</h3></button>
+    <div class="education" ng-show="view.education">
+      <h3>Galvanize, Inc.</h3>
+      <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Fullstack Immersive Bootcamp</h4>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> April 2016-September 2016</h4>
+      <h3>University of Colorado at Boulder</h3>
+      <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Bachelor of Arts, Economics</h4>
+      <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Bachelor of Arts, English</h4>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> August 2010-May 2014</h4>
+    </div>
+    <button class="button" id="skillsButton" ng-click="view.skills = !view.skills"><h1><i class="fa fa-pied-piper" aria-hidden="true"></i> Tech Skills</h1></button>
+    <br>
+    <div class="skills" ng-show="view.skills">
+      <h3>HTML5/CSS</h3>
+      <div class="meter">
+        <span style="width: 80%"></span>
+      </div>
+      <h3>JavaScript</h3>
+      <div class="meter">
+        <span style="width: 75%"></span>
+      </div>
+      <h3>jQuery</h3>
+      <div class="meter">
+        <span style="width: 73%"></span>
+      </div>
+      <h3>SQL/PostgreSQL</h3>
+      <div class="meter">
+        <span style="width: 80%"></span>
+      </div>
+      <h3>AngularJS</h3>
+      <div class="meter">
+        <span style="width: 65%"></span>
+      </div>
+      <h3>Node/Express</h3>
+      <div class="meter">
+        <span style="width: 80%"></span>
+      </div>
+      <h3>Agile Project Management/Workflow</h3>
+      <div class="meter">
+        <span style="width: 70%"></span>
+      </div>
+      <h3>Adobe Photoshop</h3>
+      <div class="meter">
+        <span style="width: 50%"></span>
+      </div>
+      <h3>Adobe Illustrator/InDesign</h3>
+      <div class="meter">
+        <span style="width: 40%"></span>
+      </div>
+    </div>
+    <button class="button" id="aboutButton" ng-click="view.about = !view.about"><h1><i class="fa fa-star" aria-hidden="true"></i> About Me</h1></button>
+    <div class="about" ng-show="view.about">
+      <p>I am an aspiring web developer, avid skier, former gymnast, yoga enthusiast, and coffee addict. I love working and collaborating on new projects, and enjoy
+      the logical thinking that coding requires. You can find me in the Boulder/Denver area, enjoying the mountains and beer that Colorado offers.</p>
+    </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
