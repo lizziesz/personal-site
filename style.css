@@ -1,3 +1,5 @@
+/*General styling*/
+
 * {
   background-color: #F5F3EE;
 }
@@ -7,6 +9,8 @@ body {
   color: #8DB500;
 }
 
+/*left side of page*/
+
 .left {
   width: 50%;
   text-align: center;
@@ -15,15 +19,27 @@ body {
 }
 
 .left h1 {
-  /*font-family: 'Shadows Into Light', cursive;*/
   font-family: 'Nothing You Could Do', cursive;
-  /*font-family: 'Over the Rainbow', cursive;*/
-  /*font-family: 'Dawning of a New Day', cursive;*/
-  /*font-family: 'Waiting for the Sunrise', cursive;*/
   font-size: 75px;
   color: #5E0042;
   margin-bottom: 0px;
 }
+
+a {
+  padding-right: 20px;
+}
+
+img {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.email {
+  color: #2C2233;
+}
+
+/*right side of page*/
 
 .right {
   width: 50%;
@@ -41,8 +57,24 @@ body {
 }
 
 #portfolioButton:hover, #experienceButton:hover, #educationButton:hover, #skillsButton:hover, #aboutButton:hover {
-  margin-top: 10px;
-  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.portfolio h3, .experience h3, .education h3 {
+  color: #2C2233;
+}
+
+.portfolio a {
+  text-decoration: none;
+  color: #2C2233;
+}
+
+.portfolio a:hover {
+  color: #8DB500;
+}
+
+.about p {
+  font-size: 1.25em;
 }
 
 /*Buttons*/
@@ -59,29 +91,6 @@ body {
   color: #8DB500;
 }
 
-a {
-  padding-right: 20px;
-}
-
-img {
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
-}
-
-.portfolio h3, .experience h3, .education h3 {
-  color: #2C2233;
-}
-
-.portfolio a {
-  text-decoration: none;
-  color: #2C2233;
-}
-
-.portfolio a:hover {
-  color: #8DB500;
-}
-
 /*Tech skills display*/
 
 .skills h3 {
@@ -95,7 +104,7 @@ img {
 }
 
 .meter {
-	height: 15px;  /* Can be anything */
+	height: 15px;
 	position: relative;
 	background: #555;
 	-moz-border-radius: 25px;
@@ -123,32 +132,4 @@ img {
     inset 0 -2px 6px rgba(0,0,0,0.4);
   position: relative;
   overflow: hidden;
-}
-
-.email {
-  color: #2C2233;
-}
-
-/*Animations*/
-
-.portfolio.ng-enter, .experience.ng-enter, .education.ng-enter, .skills.ng-enter {
-  transition: all 0.5s linear;
-  opacity: 0;
-}
-
-.portfolio.ng-enter-active, .experience.ng-enter-active, .education.ng-enter-active, .skills.ng-enter-active {
-  opacity: 1;
-}
-
-.portfolio.ng-leave, .experience.ng-leave, .education.ng-leave, .skills.ng-leave {
-  transition: all 0.5s linear;
-  opacity: 1;
-}
-
-.post.ng-leave-active, .experience.ng-leave-active, .education.ng-leave-active, .skills.ng-leave-active {
-  opacity: 0;
-}
-
-.about p {
-  font-size: 1.25em;
 }

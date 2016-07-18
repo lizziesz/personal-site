@@ -5,12 +5,9 @@
   <meta name="viewport" content="width=device-width" , initial-scale="1">
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
   <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Over+the+Rainbow' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
@@ -29,18 +26,18 @@
   <div class="right">
     <button class="button" id="portfolioButton" ng-click="view.portfolio = !view.portfolio"><h1><i class="fa fa-paint-brush" aria-hidden="true"></i> Portfolio</h1></button>
     <br>
-    <div class="portfolio" ng-show="view.portfolio">
+    <div class="portfolio animated zoomIn" ng-show="view.portfolio">
       <p>Source code for all these projects and more class assignments can be found on my GitHub page.</p>
-      <h3>Galvanize Q1 Project: <a href="http://cooks-and-cookies.s3-website-us-west-2.amazonaws.com/">Cooks & Cookies</a></h3>
+      <h3>Galvanize Q1 Individual Project: <a href="http://cooks-and-cookies.s3-website-us-west-2.amazonaws.com/">Cooks & Cookies</a></h3>
       <p>Cooks & Cookies is a website that allows the user to search through exclusively dessert recipes and save favorite results. Technologies used include: HTML, CSS, Bootstrap, jQuery, Yummly API, Local Storage, and hosting through AWS.</p>
-      <h3>Galvanize Q2 Project: <a href="https://findingfido.herokuapp.com/">Finding Fido</a></h3>
+      <h3>Galvanize Q2 Group Project: <a href="https://findingfido.herokuapp.com/">Finding Fido</a></h3>
       <p>Finding Fido is a website that allows users to post pets that they have either lost or found, in the hopes of reuniting lost pets with their owners. Technologies used includes: Node, Express, CSS, Sass, SQL, Knex, jQuery, JavaScript, and hosting through Heroku.</p>
       <h3>Angular Unit Project: <a href="http://reddit-clone.s3-website-us-west-2.amazonaws.com/">Reddit Clone</a></h3>
       <p>Reddit Clone was a fun class assignment to mimic Reddit using AngularJS.</p>
     </div>
     <button class="button" id="experienceButton" ng-click="view.experience = !view.experience"><h1><i class="fa fa-briefcase" aria-hidden="true"></i> Experience</h1></button>
     <br>
-    <div class="experience" ng-show="view.experience">
+    <div class="experience animated zoomIn" ng-show="view.experience">
       <h3>Full Stack Student at Galvanize, Inc.</h3>
       <h4><i class="fa fa-calendar" aria-hidden="true"></i> April 2016-Present</h4>
       <p>Galvanize is an intensive six-month coding bootcamp. As a student, I am responsible for keeping up to date with lectures and assignments. There are multiple assignments at any given time. Each quarter culminates in a final project. Topics learned include HTML, CSS, JavaScript, jQuery, Node, Express, and Angular.</p>
@@ -68,7 +65,7 @@
     </div>
     <button class="button" id="educationButton" ng-click="view.education = !view.education"><h1><i class="fa fa-university" aria-hidden="true"></i> Education</h1></button>
     <br>
-    <div class="education" ng-show="view.education">
+    <div class="education animated zoomIn" ng-show="view.education">
       <h3>Galvanize, Inc.</h3>
       <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Fullstack Immersive Bootcamp</h4>
       <h4><i class="fa fa-calendar" aria-hidden="true"></i> April 2016-September 2016</h4>
@@ -79,7 +76,7 @@
     </div>
     <button class="button" id="skillsButton" ng-click="view.skills = !view.skills"><h1><i class="fa fa-pied-piper" aria-hidden="true"></i> Tech Skills</h1></button>
     <br>
-    <div class="skills" ng-show="view.skills">
+    <div class="skills animated zoomIn" ng-show="view.skills">
       <h3>HTML5/CSS</h3>
       <div class="meter">
         <span style="width: 80%"></span>
@@ -118,14 +115,13 @@
       </div>
     </div>
     <button class="button" id="aboutButton" ng-click="view.about = !view.about"><h1><i class="fa fa-star" aria-hidden="true"></i> About Me</h1></button>
-    <div class="about" ng-show="view.about">
+    <div class="about animated zoomIn" ng-show="view.about">
       <p>I am an aspiring web developer, avid skier, former gymnast, yoga enthusiast, and coffee addict. I love working and collaborating on new projects, and enjoy
       the logical thinking that coding requires. You can find me in the Boulder/Denver area, enjoying the mountains and beer that Colorado offers.</p>
     </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </body>
