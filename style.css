@@ -93,15 +93,33 @@ img {
 
 /*Tech skills display*/
 
+.logo {
+  border-radius: 0%;
+  height: 150px;
+}
+
+.skills i {
+  color: #005869;
+  display: none;
+}
+
 .skills h3 {
   text-align: left;
   padding-left: 20px;
+  /*color: #2C2233;*/
+  color: #005869;
+}
+
+.skills h4 {
+  color: #2C2233;
 }
 
 .skills {
   padding-right: 10px;
   margin-bottom: 20px;
 }
+
+/*Skill bars display*/
 
 .meter {
 	height: 15px;
