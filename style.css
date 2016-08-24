@@ -39,6 +39,10 @@ img {
   color: #2C2233;
 }
 
+i:hover {
+  color: #005869;
+}
+
 /*right side of page*/
 
 .right {
