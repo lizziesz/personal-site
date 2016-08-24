@@ -39,7 +39,11 @@ img {
   color: #2C2233;
 }
 
-i:hover {
+i.fa-3x:hover {
+  color: #005869;
+}
+
+.email:hover {
   color: #005869;
 }
 
