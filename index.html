@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" , initial-scale="1">
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="animate.min.css">
-  <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+  <link rel="stylesheet" href="stylesheets/animate.min.css">
   <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/media.css">
   <title>Lizzie Szoke</title>
 </head>
 <body ng-controller="MyController">
   <div class="left">
     <h1>Lizzie Szoke</h1>
-    <img ng-src="my_image.jpg" alt="Picture of Lizzie">
+    <img ng-src="images/my_image.jpg" alt="Picture of Lizzie">
     <h2>Full Stack Web Developer</h2>
     <a href="https://www.linkedin.com/in/lizzie-szoke-71481534"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
     <a href="https://github.com/lizziesz"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
@@ -37,6 +38,8 @@
       <p>Reddit Clone was a fun class assignment to mimic Reddit using AngularJS.</p>
       <h3><a href="https://hitch-bike.herokuapp.com">Galvanize Q3 Group Project: Hitch Bike</a></h3>
       <p>Hitch Bike is a website that allows users to find bikes to rent and post their own bikes to rent. This lets users find short term bikes to use, or make extra money from renting their bike. Technologies used include: AngularJS, Node, Express, SQL, Knex, JavaScript, CSS, Sass, and hosting through Heroku.</p>
+      <h3><a href="https://findmeaplacetoeat.herokuapp.com/#/">Galvanize Capstone Individual Project: Food Find</a></h3>
+      <p>Food Find helps indecisive hungry people everywhere by allowing users to find a random restaurant based on their location, what they are in the mood for, and how far they want to go. Food Find also allows users to keep track of what restaurants they've been to and their favorites. Users can generate a random restaurant from only their favorites. Technologies used include: AngularJS, Node, Express, PostgreSQL, Knex, JavaScript, CSS, Bootstrap, and hosting through Heroku.</p>
     </div>
     <button class="button" id="experienceButton" ng-click="view.experience = !view.experience"><h1><i class="fa fa-briefcase" aria-hidden="true"></i> Experience</h1></button>
     <br>
@@ -135,6 +138,6 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="javascripts/app.js"></script>
 </body>
 </html>

@@ -2,10 +2,12 @@
 
 * {
   background-color: #F5F3EE;
+  /*background: url('cork-wallet.png') repeat 0 0;*/
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   color: #8DB500;
 }
 
@@ -94,7 +96,8 @@ i.fa-3x:hover {
 .button {
   background-color: Transparent;
   background-repeat: no-repeat;
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Playfair Display', serif;
   border: none;
   cursor: pointer;
   overflow: hidden;
