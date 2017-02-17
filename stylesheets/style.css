@@ -2,14 +2,14 @@
 /* Background pattern from Subtle Patterns */
 
 * {
-  /*background-color: #F5F4EB;*/
-  background: url('../images/logo_x_pattern.png') repeat 0 0;
+  background-color: #ECECEA;
+  /*background: url('../images/logo_x_pattern.png') repeat 0 0;*/
 }
 
 body {
   /*font-family: 'Raleway', sans-serif;*/
   font-family: 'Roboto', sans-serif;
-  color: #434E3C;
+  color: #558C89;
 }
 
 /*left side of page*/
@@ -43,11 +43,11 @@ img {
 }
 
 i.fa-3x:hover {
-  color: #005869;
+  color: #74AFAD;
 }
 
 .email:hover {
-  color: #005869;
+  color: #74AFAD;
 }
 
 /*right side of page*/
@@ -64,7 +64,7 @@ i.fa-3x:hover {
 }
 
 .right p {
-  color: #005869;
+  color: #74AFAD;
 }
 
 #portfolioButton:hover, #experienceButton:hover, #educationButton:hover, #skillsButton:hover, #aboutButton:hover {
@@ -72,16 +72,16 @@ i.fa-3x:hover {
 }
 
 .portfolio h3, .experience h3, .education h3 {
-  color: #2C2233;
+  color: #D9853B;
 }
 
 .portfolio a {
   text-decoration: none;
-  color: #2C2233;
+  color: #D9853B;
 }
 
 .portfolio a:hover {
-  color: #434E3C;
+  color: #74AFAD;
 }
 
 .about p {
@@ -89,7 +89,7 @@ i.fa-3x:hover {
 }
 
 .education h4 {
-  color: #005869;
+  color: #74AFAD;
 }
 
 /*Buttons*/
@@ -104,7 +104,7 @@ i.fa-3x:hover {
   overflow: hidden;
   outline: none;
   font-size: 20px;
-  color: #434E3C;
+  color: #558C89;
 }
 
 /*Tech skills display*/
@@ -115,7 +115,7 @@ i.fa-3x:hover {
 }
 
 .skills i {
-  color: #005869;
+  color: #74AFAD;
   display: none;
 }
 
@@ -123,7 +123,7 @@ i.fa-3x:hover {
   text-align: left;
   padding-left: 20px;
   /*color: #2C2233;*/
-  color: #005869;
+  color: #74AFAD;
 }
 
 .skills h4 {
